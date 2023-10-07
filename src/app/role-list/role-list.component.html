@@ -15,7 +15,7 @@
           [class.text-success]="todo['completed']"
           [ngClass]="{ 'text-danger': !todo['completed'] }"
         >
-          {{ todo["completed"] ? "Completed" : "Not completed" }}
+          <span>{{ todo["completed"] ? "Completed" : "Not completed" }}</span>
         </td>
       </tr>
     </ng-container>
